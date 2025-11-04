@@ -170,6 +170,65 @@ footer {
   font-size: 0.9rem;
 }
 
+/* ----- Seções de Vídeos ----- */
+
+#videos-informativos, #videos-explicativos {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.video-box {
+  background: #f9f9f9;
+  border: 2px dashed #bdbdbd;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Vídeo quando for adicionado futuramente */
+video, iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+}
+
+
+
+/* Vídeo vertical responsivo */
+video, iframe {
+  width: 100%;
+  max-width: 350px; /* controla a largura máxima do vídeo */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* centraliza o vídeo */
+  border-radius: 12px;
+  background: #000; /* fundo preto para bordas laterais */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 600px) {
+  video, iframe {
+    max-width: 280px;
+  }
+}
+
 /* 📱 Responsividade */
 @media (max-width: 768px) {
   header h1 {
